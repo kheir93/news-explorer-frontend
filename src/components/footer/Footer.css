@@ -1,0 +1,147 @@
+.footer {
+  font-family: 'Roboto', sans-serif;
+  padding: 32px 0 26px 0;
+  max-width: 1440px;
+  margin: 0 5% 0 5%;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 22px;
+  color: #B6BCBF;
+  margin: 0;
+}
+
+.footer__nav {
+  display: flex;
+}
+
+.footer__links {
+  display: flex;  
+}
+
+.footer__link {
+  color: #1A1B22;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 40px;
+  align-self: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.footer__link:hover {
+  opacity: 0.6;
+}
+
+.footer__social-media {
+  display: flex;
+}
+
+.footer__icon {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.footer__icon:hover {
+  opacity: 0.6;
+}
+
+.footer__icon_github {
+  margin-left: 40px;
+}
+
+.footer__icon_facebook {
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .footer__link {
+    margin-left: 24px;
+  }
+
+  .footer__icon_github {
+    margin-left: 24px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .footer {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer__nav {
+    justify-content: space-between;
+  }  
+}
+
+@media screen and (max-width: 540px) {
+  .footer {     
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .footer__nav {
+    display: grid;
+    grid-template-columns: auto 20%;
+    grid-template-rows: 1fr;
+    grid-template-areas:    
+      "link social";  
+  }
+
+  .footer__links {      
+    display: flex;    
+    align-items: flex-start;    
+    grid-area: link;
+  }
+
+  .footer__social-media {
+    display: flex;    
+    flex-direction: row;
+    grid-area: social;
+  }
+
+  .footer__link {    
+    margin-left: 0;
+    align-self: flex-start;
+    margin-bottom: 50px;
+  }
+  
+  .footer__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .footer__nav {   
+    flex-direction: column;
+  }
+
+  .footer__links {
+    flex-direction: column;
+  }
+
+  .footer__social-media {
+    align-items: flex-start;
+  } 
+}
+
+@media screen and (max-width: 340px) {
+  .footer {
+    max-width: 70%;
+  }
+}
